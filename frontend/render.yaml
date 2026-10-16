@@ -1,0 +1,6 @@
+services:
+  - type: web
+    runtime: static
+    name: elace-casamentos-frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist/browser

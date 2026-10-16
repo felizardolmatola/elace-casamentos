@@ -1,0 +1,7 @@
+node_modules
+node-v26.8.1-win-x64
+env.sh
+.DS_Store
+backend/data
+.env
+**/.env
