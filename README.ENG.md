@@ -1,15 +1,15 @@
-# 💍 Elace Casamentos
+# Elace Casamentos
 
-🇬🇧 English · 🇵🇹 [Português](README.pt.md)
+English · [Português](README.pt.md)
 
 A web platform that lets couples organize their wedding in one place: planning tools, a marketplace of wedding vendors, and quote-request tracking.
 
-> ### 🚧 Work in progress
-> This project is **under active development**. The interface and the API both exist and partly work, but several features are not yet connected to each other or not yet implemented. The section [What's still missing](#-whats-still-missing) is an honest account of what is done and what is not.
+> ### Work in progress
+> This project is **under active development**. The interface and the API both exist and partly work, but several features are not yet connected to each other or not yet implemented. The section [What's still missing](#whats-still-missing) is an honest account of what is done and what is not.
 
 ---
 
-## 📸 Preview
+## Preview
 
 ### Home page
 ![Home page](/frontend/src/assets/img/projeto/1.png)
@@ -31,7 +31,7 @@ Vendor categories: photo and video, decoration and flowers, music and entertainm
 
 ---
 
-## ✅ What already works
+## What already works
 
 **Frontend (Angular, standalone components)**
 - Home page with tools and vendors sections
@@ -51,7 +51,7 @@ Vendor categories: photo and video, decoration and flowers, music and entertainm
 - Notifications and password change
 - Health endpoint (`/api/health`) and configurable CORS
 
-## 🛠️ Tech stack
+## Tech stack
 
 | Layer | Technology |
 |---|---|
@@ -61,7 +61,7 @@ Vendor categories: photo and video, decoration and flowers, music and entertainm
 | Auth | JWT (`jsonwebtoken`) + `bcryptjs` |
 | Backend hosting | Render |
 
-## 📁 Structure
+## Structure
 
 ```
 .
@@ -81,7 +81,7 @@ Vendor categories: photo and video, decoration and flowers, music and entertainm
 └── docs/screenshots/        # images used in this README
 ```
 
-## 🚀 Getting started
+## Getting started
 
 ### Backend
 ```bash
@@ -104,7 +104,7 @@ The database SQL schema is not in the repository yet (see below).
 ### Frontend
 The frontend lives in `frontend/src` and runs at `http://localhost:4200`. The Angular configuration files (`package.json`, `angular.json`, `tsconfig`) are **not included in this repository yet**, so you need to generate a project with the Angular CLI and copy `src/` into it.
 
-## 🧭 What's still missing
+## What's still missing
 
 ### 1. Connect the frontend to the backend (top priority)
 Today the backend and the frontend exist side by side, but **they barely talk to each other**:
@@ -138,7 +138,7 @@ Tables and routes are missing for: **task checklist, budget and expenses, seatin
 - Cleanup: remove the outdated backend READMEs (they mention `.js` files), move `i18n.ts` (it is a browser script, not a server one) and settle on one product name (the UI says "Elace", the backend code says "Enlace")
 - Internationalization (PT/EN), accessibility and small-screen testing
 
-## 🗺️ Suggested roadmap
+## Suggested roadmap
 
 1. Align routes and connect login, sign-up and the marketplace to the real API
 2. Move guests, services and requests from the dashboards to the backend

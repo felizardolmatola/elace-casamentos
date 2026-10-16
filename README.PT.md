@@ -1,15 +1,15 @@
-# 💍 Elace Casamentos
+# Elace Casamentos
 
-🇬🇧 [English](README.md) · 🇵🇹 Português
+[English](README.md) · Português
 
 Plataforma web para casais organizarem o casamento num só lugar: planeamento, marketplace de fornecedores e acompanhamento de pedidos.
 
-> ### 🚧 Projeto em construção
-> Este é um projeto **em desenvolvimento ativo**. A interface e a API já existem e funcionam em partes, mas várias funcionalidades ainda não estão ligadas entre si ou não estão implementadas. A secção [O que ainda falta](#-o-que-ainda-falta-implementar) explica, com transparência, o que está feito e o que não está.
+> ### Projeto em construção
+> Este é um projeto **em desenvolvimento ativo**. A interface e a API já existem e funcionam em partes, mas várias funcionalidades ainda não estão ligadas entre si ou não estão implementadas. A secção [O que ainda falta](#o-que-ainda-falta-implementar) explica, com transparência, o que está feito e o que não está.
 
 ---
 
-## 📸 Pré-visualização
+## Pré-visualização
 
 ### Página inicial
 ![Página inicial](/frontend/src/assets/img/projeto/1.png)
@@ -31,7 +31,7 @@ Categorias de profissionais (fotografia e vídeo, decoração e flores, música 
 
 ---
 
-## ✅ O que já funciona
+## O que já funciona
 
 **Frontend (Angular, componentes standalone)**
 - Página inicial com secções de ferramentas e fornecedores
@@ -51,7 +51,7 @@ Categorias de profissionais (fotografia e vídeo, decoração e flores, música 
 - Notificações e alteração de palavra-passe
 - Endpoint de saúde (`/api/health`) e CORS configurável
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 | Camada | Tecnologia |
 |---|---|
@@ -61,7 +61,7 @@ Categorias de profissionais (fotografia e vídeo, decoração e flores, música 
 | Autenticação | JWT (`jsonwebtoken`) + `bcryptjs` |
 | Deploy do backend | Render |
 
-## 📁 Estrutura
+## Estrutura
 
 ```
 .
@@ -81,7 +81,7 @@ Categorias de profissionais (fotografia e vídeo, decoração e flores, música 
 └── docs/screenshots/        # imagens deste README
 ```
 
-## 🚀 Como executar
+## Como executar
 
 ### Backend
 ```bash
@@ -104,7 +104,7 @@ O esquema SQL da base de dados ainda não está no repositório (ver abaixo).
 ### Frontend
 O frontend está em `frontend/src` e corre em `http://localhost:4200`. Os ficheiros de configuração do Angular (`package.json`, `angular.json`, `tsconfig`) ainda **não estão incluídos neste repositório**, por isso é preciso gerar o projeto com a Angular CLI e copiar `src/` para dentro dele.
 
-## 🧭 O que ainda falta implementar
+## O que ainda falta implementar
 
 ### 1. Ligar o frontend ao backend (prioridade máxima)
 Hoje o backend e o frontend existem lado a lado, mas **quase não falam um com o outro**:
@@ -138,7 +138,7 @@ Faltam tabelas e rotas para: **checklist de tarefas, orçamento e despesas, mapa
 - Limpeza técnica: remover os READMEs desatualizados do backend (referem ficheiros `.js`), mover o `i18n.ts` (é um script de navegador, não de servidor) e escolher um nome único para o produto (a interface usa "Elace" e o código do backend usa "Enlace")
 - Internacionalização (PT/EN), acessibilidade e testes em ecrãs pequenos
 
-## 🗺️ Roadmap sugerido
+## Roadmap sugerido
 
 1. Alinhar rotas e ligar login, registo e marketplace à API real
 2. Migrar convidados, serviços e solicitações dos painéis para o backend
